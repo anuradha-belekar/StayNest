@@ -1,2 +1,2 @@
 # StayNest
-Accommodation reservation dull stack app with security
+Accommodation reservation full stack app with security
