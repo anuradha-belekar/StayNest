@@ -1,0 +1,25 @@
+# Java / Maven / Gradle
+target/
+build/
+out/
+bin/
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+
+# IntelliJ / VS Code
+.idea/
+*.iml
+.vscode/
+
+# Node / React
+node_modules/
+dist/
+build/
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.log
