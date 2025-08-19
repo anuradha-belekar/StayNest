@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\cdac\Project\StayNestProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

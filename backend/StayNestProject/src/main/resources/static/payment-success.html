@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Status</title>
+</head>
+<body>
+    <h1>Stripe Payment Result</h1>
+    <p id="message">Checking payment status...</p>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const paymentIntent = urlParams.get("payment_intent");
+        const redirectStatus = urlParams.get("redirect_status");
+
+        const messageElement = document.getElementById("message");
+
+        if (redirectStatus === "succeeded") {
+            messageElement.innerText = "🎉 Payment successful!";
+        } else if (redirectStatus === "failed") {
+            messageElement.innerText = "❌ Payment failed. Please try again.";
+        } else if (redirectStatus) {
+            messageElement.innerText = `Payment status: ${redirectStatus}`;
+        } else {
+            messageElement.innerText = "No payment info found.";
+        }
+    </script>
+</body>
+</html>
